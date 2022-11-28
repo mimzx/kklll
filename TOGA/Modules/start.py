@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup
 
 import config
 
-from FallenMusic import (
+from TOGA import (
     app,
     BOT_NAME,
     BOT_USERNAME,
