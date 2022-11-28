@@ -13,13 +13,13 @@ from FallenMusic import (
     OWNER,
     StartTime,
 )
-from FallenMusic.Helpers import (get_readable_time,
+from TOGA.Helpers import (get_readable_time,
                                  pm_buttons, gp_buttons)
-from FallenMusic.Helpers.dossier import *
+from TOGA.Helpers.dossier import *
 
 
-@app.on_message(filters.command(["start"]) & ~filters.forwarded)
-@app.on_edited_message(filters.command(["start"]) & ~filters.forwarded)
+@app.on_message(filters.command(["UFGstart"]) & ~filters.forwarded)
+@app.on_edited_message(filters.command(["UFGstart"]) & ~filters.forwarded)
 async def fallen_st(_, message: Message):
     if message.chat.type == ChatType.PRIVATE:
         upt = int(time.time() - StartTime)
