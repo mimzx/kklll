@@ -7,8 +7,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from FallenMusic import app, StartTime, BOT_NAME, BOT_USERNAME
-from FallenMusic.Helpers import get_readable_time
+from TOGA import app, StartTime, BOT_NAME, BOT_USERNAME
+from TOGA.Helpers import get_readable_time
 
 
 @app.on_message(filters.command("ping"))
