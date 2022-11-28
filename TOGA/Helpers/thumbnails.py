@@ -85,7 +85,7 @@ async def gen_thumb(videoid):
             background = enhancer.enhance(0.6)
             image2 = background
                                                                                             
-            circle = Image.open("FallenMusic/Helpers/utils/circle.png")
+            circle = Image.open("TOGA/Helpers/utils/circle.png")
 
             image3 = image1.crop((280,0,1000,720))
             lum_img = Image.new('L', [720,720] , 0)
@@ -102,10 +102,10 @@ async def gen_thumb(videoid):
             image2.paste(circle, (0,0), mask = circle)
 
             # fonts
-            font1 = ImageFont.truetype('FallenMusic/Helpers/utils/font.ttf', 30)
-            font2 = ImageFont.truetype('FallenMusic/Helpers/utils/font2.ttf', 70)
-            font3 = ImageFont.truetype('FallenMusic/Helpers/utils/font2.ttf', 40)
-            font4 = ImageFont.truetype('FallenMusic/Helpers/utils/font2.ttf', 35)
+            font1 = ImageFont.truetype('TOGA/Helpers/utils/font.ttf', 30)
+            font2 = ImageFont.truetype('TOGA/Helpers/utils/font2.ttf', 70)
+            font3 = ImageFont.truetype('TOGA/Helpers/utils/font2.ttf', 40)
+            font4 = ImageFont.truetype('TOGA/Helpers/utils/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((10, 10), "TOGA MUSIC", fill="black", font = font1, align ="left")
@@ -180,7 +180,7 @@ async def gen_qthumb(videoid):
             background = enhancer.enhance(0.6)
             image2 = background
                                                                                             
-            circle = Image.open("FallenMusic/Helpers/utils/circle.png")
+            circle = Image.open("TOGA/Helpers/utils/circle.png")
 
             image3 = image1.crop((280,0,1000,720))
             lum_img = Image.new('L', [720,720] , 0)
@@ -197,10 +197,10 @@ async def gen_qthumb(videoid):
             image2.paste(circle, (0,0), mask = circle)
 
             # fonts
-            font1 = ImageFont.truetype('FallenMusic/Helpers/utils/font.ttf', 30)
-            font2 = ImageFont.truetype('FallenMusic/Helpers/utils/font2.ttf', 70)
-            font3 = ImageFont.truetype('FallenMusic/Helpers/utils/font2.ttf', 40)
-            font4 = ImageFont.truetype('FallenMusic/Helpers/utils/font2.ttf', 35)
+            font1 = ImageFont.truetype('TOGA/Helpers/utils/font.ttf', 30)
+            font2 = ImageFont.truetype('TOGA/Helpers/utils/font2.ttf', 70)
+            font3 = ImageFont.truetype('TOGA/Helpers/utils/font2.ttf', 40)
+            font4 = ImageFont.truetype('TOGA/Helpers/utils/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((10, 10), "TOGA MUSIC", fill="black", font = font1, align ="left")
