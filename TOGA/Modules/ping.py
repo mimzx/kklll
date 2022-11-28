@@ -33,18 +33,4 @@ async def ping_fallen(_, message: Message):
 **ᴜᴩᴛɪᴍᴇ :** {uptime}
 **ʀᴀᴍ :** {mem}
 **ᴄᴩᴜ :** {cpu}
-**ᴅɪsᴋ :** {disk}""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=new"
-                    )
-                ],
-                [
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT),
-                    InlineKeyboardButton("sᴏᴜʀᴄᴇ", url="https://github.com/AnonymousR1025/FallenMusic"),
-                ]
-            ]
-        ),
-    )
+**ᴅɪsᴋ :** {disk}"""
