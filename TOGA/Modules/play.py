@@ -180,7 +180,7 @@ async def play(_, message: Message):
         button = queue_markup(message)
         await message.reply_photo(
             photo=qimg,
-            caption=f"**➻ ᴀᴅᴅᴇᴅ ᴛᴏ ᴏ̨ᴜᴇᴜᴇ ᴀᴛ {position}**\n\n **ᴛɪᴛʟᴇ :** [{title[:27]}]({url})\n **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
+            caption=f"**• ᴀᴅᴅᴇᴅ ᴛᴏ ᴏ̨ᴜᴇᴜᴇ ᴀᴛ {position}**\n\n **• ᴛɪᴛʟᴇ :** [{title[:27]}]({url})\n **• ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n **• ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
             reply_markup=InlineKeyboardMarkup(button),
         )
     else:
