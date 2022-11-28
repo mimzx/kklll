@@ -32,7 +32,7 @@ async def forceclose_command(_, CallbackQuery):
     if CallbackQuery.from_user.id != int(user_id):
         try:
             return await CallbackQuery.answer(
-                "» ɪᴛ'ʟʟ ʙᴇ ʙᴇᴛᴛᴇʀ ɪғ ʏᴏᴜ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs ʙᴀʙʏ.", show_alert=True
+                "» ɪᴛ'ʟʟ ʙᴇ ʙᴇᴛᴛᴇʀ ɪғ ʏᴏᴜ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs.", show_alert=True
             )
         except:
             return
@@ -54,7 +54,7 @@ async def admin_cbs(_, query: CallbackQuery):
         await stream_on(query.message.chat.id)
         await pytgcalls.resume_stream(query.message.chat.id)
         await query.message.reply_text(
-            text=f"➻ sᴛʀᴇᴀᴍ ʀᴇsᴜᴍᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention} ",
+            text=f"• sᴛʀᴇᴀᴍ ʀᴇsᴜᴍᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention} ",
             reply_markup=close_key,
         )
 
@@ -64,7 +64,7 @@ async def admin_cbs(_, query: CallbackQuery):
         await stream_off(query.message.chat.id)
         await pytgcalls.pause_stream(query.message.chat.id)
         await query.message.reply_text(
-            text=f"➻ sᴛʀᴇᴀᴍ ᴩᴀᴜsᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention} ",
+            text=f"• sᴛʀᴇᴀᴍ ᴩᴀᴜsᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention} ",
             reply_markup=close_key,
         )
 
@@ -75,7 +75,7 @@ async def admin_cbs(_, query: CallbackQuery):
         except:
             pass
         await query.message.reply_text(
-            text=f"➻ sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ/sᴛᴏᴩᴩᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention} ",
+            text=f"• sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ/sᴛᴏᴩᴩᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention} ",
             reply_markup=close_key,
         )
         await query.message.delete()
@@ -87,7 +87,7 @@ async def admin_cbs(_, query: CallbackQuery):
                 await _clear_(query.message.chat.id)
                 await pytgcalls.leave_group_call(query.message.chat.id)
                 await query.message.reply_text(
-                    text=f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention}\n\n**» ɴᴏ ᴍᴏʀᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ɪɴ** {query.message.chat.title}, **ʟᴇᴀᴠɪɴɢ ᴠɪᴅᴇᴏᴄʜᴀᴛ.**",
+                    text=f"• sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ\n│ \n└ʙʏ : {query.from_user.mention}\n\n**» ɴᴏ ᴍᴏʀᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ɪɴ** {query.message.chat.title}, **ʟᴇᴀᴠɪɴɢ ᴠɪᴅᴇᴏᴄʜᴀᴛ.**",
                     reply_markup=close_key,
                 )
                 return await query.message.delete()
@@ -124,7 +124,7 @@ async def admin_cbs(_, query: CallbackQuery):
             )
             return await query.message.reply_photo(
                 photo=img,
-                caption=f"**➻ sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ**\n\n **ᴛɪᴛʟᴇ :** {title[:27]}\n **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {req_by}",
+                caption=f"**• sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ**\n\n **ᴛɪᴛʟᴇ :** {title[:27]}\n **• ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n **• ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {req_by}",
                 reply_markup=buttons,
             )
 
@@ -144,7 +144,7 @@ async def unban_ass(_, CallbackQuery):
                 show_alert=True,
             )
         return await CallbackQuery.edit_message_text(
-            f"➻ {ASS_NAME} sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʙᴀɴɴᴇᴅ ʙʏ {CallbackQuery.from_user.mention}.\n\nᴛʀʏ ᴘʟᴀʏɪɴɢ ɴᴏᴡ..."
+            f"• {ASS_NAME} sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʙᴀɴɴᴇᴅ ʙʏ {CallbackQuery.from_user.mention}.\n\nᴛʀʏ ᴘʟᴀʏɪɴɢ ɴᴏᴡ..."
         )
     else:
         return await CallbackQuery.answer(
@@ -162,7 +162,7 @@ async def help_menu(_, query: CallbackQuery):
 
     try:
         await query.edit_message_text(
-            text=f"๏ ʜᴇʏ {query.from_user.first_name}, \n\nᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴘ.",
+            text=f"• ʜᴇʏ {query.from_user.first_name}, \n\nᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴘ.",
             reply_markup=InlineKeyboardMarkup(helpmenu),
         )
     except Exception as e:
