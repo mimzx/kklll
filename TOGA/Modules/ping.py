@@ -11,24 +11,27 @@ from TOGA import app, StartTime, BOT_NAME, BOT_USERNAME
 from TOGA.Helpers import get_readable_time
 
 
-@app.on_message(
-    filters.command(PING_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
-@language
-async def ping_com(client, message: Message, _):
-    response = await message.reply_photo(
-        photo=PING_IMG_URL,
-        caption=_["ping_1"],
+@app.on_message(filters.command("ping"))
+async def ping_fallen(_, message: Message):
+    hmm = await message.reply_photo(
+        photo=config.PING_IMG,
+        caption=f"{BOT_NAME} ɪs ᴘɪɴɢɪɴɢ..."
     )
+    upt = int(time.time() - StartTime)
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage("/").percent
     start = datetime.now()
-    pytgping = await VIV.ping()
-    UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
-    await response.edit_text(
-        _["ping_2"].format(
-            resp, MUSIC_BOT_NAME, UP, RAM, CPU, DISK, pytgping
-        )
+    uptime = get_readable_time((upt))
+
+    await hmm.edit_text(
+        f"""➻ ᴩᴏɴɢ : `{resp}ᴍs`
+<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs :</u></b>
+**ᴜᴩᴛɪᴍᴇ :** {uptime}
+**ʀᴀᴍ :** {mem}
+**ᴄᴩᴜ :** {cpu}
+**ᴅɪsᴋ :** {disk}""",
+        reply_markup=InlineKeyboardMarkup(
+        ),
     )
