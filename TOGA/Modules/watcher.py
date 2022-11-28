@@ -6,8 +6,8 @@ from pytgcalls.types import Update, HighQualityAudio
 from pytgcalls.exceptions import NoActiveGroupCall
 from pytgcalls.types.input_stream import InputStream, InputAudioStream
 
-from FallenMusic import app, app2, fallendb, pytgcalls, BOT_ID
-from FallenMusic.Helpers import buttons, _clear_, gen_thumb
+from TOGA import app, app2, fallendb, pytgcalls, BOT_ID
+from TOGA.Helpers import buttons, _clear_, gen_thumb
 
 welcome = 20
 close = 30
