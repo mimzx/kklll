@@ -5,8 +5,8 @@ from pytgcalls import StreamType
 from pytgcalls.types import HighQualityAudio
 from pytgcalls.types.input_stream import InputStream, InputAudioStream
 
-from FallenMusic import app, pytgcalls, fallendb
-from FallenMusic.Helpers import close_key, buttons, admin_check, _clear_, gen_thumb
+from TOGA import app, pytgcalls, fallendb
+from TOGA.Helpers import close_key, buttons, admin_check, _clear_, gen_thumb
 
 
 @app.on_message(filters.command(["skip", "next"]) & filters.group)
