@@ -15,17 +15,17 @@ from pytgcalls.exceptions import NoActiveGroupCall, TelegramServerError
 from pytgcalls.types.input_stream import InputStream, InputAudioStream
 
 from config import DURATION_LIMIT, FAILED
-from FallenMusic import (app, app2, BOT_NAME, SUDOERS,
+from TOGA import (app, app2, BOT_NAME, SUDOERS,
                          pytgcalls, fallendb, ASS_ID,
                          ASS_MENTION, ASS_NAME, ASS_USERNAME)
-from FallenMusic.Helpers.converter import convert
-from FallenMusic.Helpers.downloaders import download
-from FallenMusic.Helpers.errors import DurationLimitError
-from FallenMusic.Helpers.gets import get_url, get_file_name
-from FallenMusic.Helpers.inline import buttons, queue_markup
-from FallenMusic.Helpers.queue import put
-from FallenMusic.Helpers.thumbnails import gen_thumb, gen_qthumb
-from FallenMusic.Helpers.active import add_active_chat, is_active_chat, stream_on
+from TOGA.Helpers.converter import convert
+from TOGA.Helpers.downloaders import download
+from TOGA.Helpers.errors import DurationLimitError
+from TOGA.Helpers.gets import get_url, get_file_name
+from TOGA.Helpers.inline import buttons, queue_markup
+from TOGA.Helpers.queue import put
+from TOGA.Helpers.thumbnails import gen_thumb, gen_qthumb
+from TOGA.Helpers.active import add_active_chat, is_active_chat, stream_on
 
 
 
