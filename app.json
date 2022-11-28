@@ -1,11 +1,11 @@
 {
-    "name": "ғᴀʟʟᴇɴ ダ ᴍᴜsɪᴄ",
+    "name": "TogaXMusic",
     "description": "A VC Player Bot for telegram videochats, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/6f99c49bdb4679acad717.jpg",
+    "logo": "https://telegra.ph/file/016debaaf51028533f061.jpg",
     "keywords": [
     "python3",
     "telegram",
-    "Fallen",
+    "toga",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -43,7 +43,7 @@
       },
       "SUPPORT_CHAT": {
         "description": "Link of your telegram support group. (Must pe public)",
-        "value": "https://t.me/DevilsHeavenMF",
+        "value": "https://t.me/TogaSupport",
         "required": false
       }
     },
