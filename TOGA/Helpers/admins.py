@@ -17,7 +17,7 @@ def admin_check(func: Callable) -> Callable:
 
         check = await app.get_chat_member(message.chat.id, message.from_user.id)
         if check.status not in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
-            return await message.reply_text("» ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ʙᴀʙʏ, ᴘʟᴇᴀsᴇ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs.")
+            return await message.reply_text("» ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ, ᴘʟᴇᴀsᴇ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs.")
 
         admin = (await app.get_chat_member(message.chat.id, message.from_user.id)).privileges
         if admin.can_manage_video_chats:
@@ -38,7 +38,7 @@ def admin_check_cb(func: Callable) -> Callable:
 
         check = await app.get_chat_member(query.message.chat.id, query.from_user.id)
         if check.status not in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR]:
-            return await query.answer("» ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ ʙᴀʙʏ, ᴘʟᴇᴀsᴇ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs.", show_alert=True)
+            return await query.answer("» ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ, ᴘʟᴇᴀsᴇ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs.", show_alert=True)
 
         admin = (await app.get_chat_member(query.message.chat.id, query.from_user.id)).privileges
         if admin.can_manage_video_chats:
