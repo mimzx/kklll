@@ -7,7 +7,7 @@ from pytgcalls import StreamType
 from pytgcalls.types import HighQualityAudio
 from pytgcalls.types.input_stream import InputStream, InputAudioStream
 
-from FallenMusic import (
+from TOGA import (
     app,
     pytgcalls,
     fallendb,
@@ -18,9 +18,9 @@ from FallenMusic import (
     BOT_USERNAME,
     StartTime,
 )
-from FallenMusic.Helpers import admin_check_cb, _clear_, gen_thumb, stream_on, stream_off, is_streaming, get_readable_time
-from FallenMusic.Helpers.dossier import *
-from FallenMusic.Helpers.inline import (close_key, helpmenu, buttons,
+from TOGA.Helpers import admin_check_cb, _clear_, gen_thumb, stream_on, stream_off, is_streaming, get_readable_time
+from TOGA.Helpers.dossier import *
+from TOGA.Helpers.inline import (close_key, helpmenu, buttons,
                                         help_back, pm_buttons)
 
 
