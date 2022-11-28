@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from FallenMusic import app, app2, ASS_MENTION, OWNER, SUNAME
+from TOGA import app, app2, ASS_MENTION, OWNER, SUNAME
 
 
 @app.on_message(filters.command(["leaveall", "assleaveall"]) & filters.user(OWNER))
