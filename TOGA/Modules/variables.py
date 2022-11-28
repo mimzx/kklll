@@ -3,7 +3,7 @@ from pyrogram.types import Message
 from pyrogram.enums import ChatType
 
 import config
-from FallenMusic import app, BOT_NAME, OWNER
+from TOGA import app, BOT_NAME, OWNER
 
 
 @app.on_message(filters.command(["config", "variables"]) & filters.user(OWNER))
