@@ -11,7 +11,7 @@ from TOGA import app, StartTime, BOT_NAME, BOT_USERNAME
 from TOGA.Helpers import get_readable_time
 
 
-@app.on_message(filters.command("ping"))
+@@app.on_message(filters.command("ping"))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
         photo=config.PING_IMG,
@@ -26,12 +26,18 @@ async def ping_fallen(_, message: Message):
     uptime = get_readable_time((upt))
 
     await hmm.edit_text(
-        f"""➻ ᴩᴏɴɢ : `{resp}ᴍs`
-<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs :</u></b>
+        f""" ᴩᴏɴɢ : `{resp}ᴍs`
+<b><u>{BOT_NAME} System Stats :</u></b>
 **ᴜᴩᴛɪᴍᴇ :** {uptime}
 **ʀᴀᴍ :** {mem}
-**ᴄᴩᴜ :** {cpu}
-**ᴅɪsᴋ :** {disk}""",
+**ᴄᴩᴜ :** {cpu}""",
         reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "ㅤ", url=f"https://t.me/toga_robot?startgroup=new"
+                    )
+                ],
+            ]
         ),
     )
