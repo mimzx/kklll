@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from FallenMusic import BOT_USERNAME, OWNER
+from TOGA import BOT_USERNAME, OWNER
 
 
 close_key = InlineKeyboardMarkup( 
