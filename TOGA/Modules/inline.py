@@ -3,7 +3,7 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineQueryResultPhoto)
 from youtubesearchpython.__future__ import VideosSearch
 
-from FallenMusic import app, BOT_NAME
+from TOGA import app, BOT_NAME
 
 
 @app.on_inline_query()
