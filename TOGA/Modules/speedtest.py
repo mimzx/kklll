@@ -2,7 +2,7 @@ import asyncio
 import speedtest
 
 from pyrogram import filters
-from TOGA import app
+from TOGA import app, OWNER
 
 
 def testspeed(m):
@@ -21,7 +21,7 @@ def testspeed(m):
     return result
 
 
-@app.on_message(filters.command(["speedtest", "sptest", "spt"]) & filters.user(SUDOERS))
+@app.on_message(filters.command(["speedtest", "sptest", "spt"]) & filters.user(OWNER))
 async def speedtest_function(_, message):
     m = await message.reply_text("**» ʀᴜɴɴɪɴɢ sᴩᴇᴇᴅᴛᴇsᴛ...**")
     loop = asyncio.get_event_loop()
