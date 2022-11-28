@@ -1,4 +1,4 @@
-from FallenMusic import BOT_NAME
+from TOGA import BOT_NAME
 
 
 PM_START_TEXT = """
