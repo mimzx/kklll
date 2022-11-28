@@ -12,8 +12,8 @@ from pyrogram import __version__ as pyrover
 
 from pytgcalls.__version__ import __version__ as pytgver
 
-from FallenMusic import app, BOT_NAME, SUDOERS
-from FallenMusic.Modules import ALL_MODULES
+from TOGA import app, BOT_NAME, SUDOERS
+from TOGA.Modules import ALL_MODULES
 
 
 @app.on_message(filters.command(["stats", "sysstats"]) & filters.user(SUDOERS))
