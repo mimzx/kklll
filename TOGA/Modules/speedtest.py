@@ -2,7 +2,7 @@ import asyncio
 import speedtest
 
 from pyrogram import filters
-from FallenMusic import app, SUDOERS
+from TOGA import app, 
 
 
 def testspeed(m):
