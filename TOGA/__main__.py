@@ -29,12 +29,12 @@ async def fallen_startup():
     LOGGER("TOGA").info("[•] Directories Refreshed.")
 
     try:
-        await app.send_message(SUNAME, f"Toga Music Started !")
+        await app.send_message(SUNAME, f"Toga'z Music Started !")
     except:
         LOGGER("TOGA").error(f"{BOT_NAME} failed to send message at @{SUNAME}, please go & check.")
 
     try:
-        await app2.send_message(SUNAME, f"Toga Assistant Started !")
+        await app2.send_message(SUNAME, f"Toga'z Assistant Started !")
     except:
         LOGGER("TOGA").error(f"{ASS_NAME} failed to send message at @{SUNAME}, please go & check.")
 
