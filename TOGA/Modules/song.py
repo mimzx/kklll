@@ -8,7 +8,7 @@ from pyrogram.enums import ChatType
 
 from youtube_search import YoutubeSearch
 
-from FallenMusic import app, BOT_NAME, BOT_USERNAME
+from TOGA import app, BOT_NAME, BOT_USERNAME
 
 
 @app.on_message(filters.command(["song", "vsong", "video", "music"]))
