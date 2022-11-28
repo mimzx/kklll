@@ -1,7 +1,7 @@
 import os
 import asyncio
 
-from FallenMusic.Helpers.errors import FFmpegReturnCodeError
+from TOGA.Helpers.errors import FFmpegReturnCodeError
 
 
 async def convert(file_path: str) -> str:
