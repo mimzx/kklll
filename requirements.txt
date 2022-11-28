@@ -1,0 +1,15 @@
+asyncio
+aiofiles
+aiohttp
+numpy
+pillow
+psutil
+pyrogram
+py-tgcalls==0.9.2
+python-dotenv
+tgcrypto
+unidecode
+speedtest-cli
+git+https://github.com/yt-dlp/yt-dlp@master
+git+https://github.com/alexmercerind/youtube-search-python@main
+git+https://github.com/joetats/youtube_search@master
