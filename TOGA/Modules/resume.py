@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenMusic import app, pytgcalls
-from FallenMusic.Helpers import close_key, admin_check, stream_on, is_streaming
+from TOGA import app, pytgcalls
+from TOGA.Helpers import close_key, admin_check, stream_on, is_streaming
 
 
 @app.on_message(filters.command(["resume"]) & filters.group)
