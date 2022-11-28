@@ -4,7 +4,7 @@ from pyrogram.types import Message, CallbackQuery
 from pyrogram.enums import ChatMemberStatus
 
 from .active import is_active_chat
-from FallenMusic import app, SUDOERS
+from TOGA import app, 
 
 
 def admin_check(func: Callable) -> Callable:
