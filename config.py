@@ -15,7 +15,7 @@ OWNER_ID = int(getenv("OWNER_ID", "5675937545"))
 PING_IMG = getenv("PING_IMG", "https://telegra.ph/file/4faa7266294d6040d8084.png")
 START_IMG = getenv("START_IMG", "https://telegra.ph/file/2fc2b008e321ae4592ee4.jpg")
 
-SESSION = getenv("SESSION", "AQAkGxMR326usVUVHWXl8A_AKlbP0M2Be5gHyTsnjrVVQdqYhIo4cy6vIl7HTNOX4cHFTfglweBoxt93w6W3yRlQjglifZIkwyHJ5gtqMH1gSyi6_SRKCWt9EsqllRB_rcDLlqC7Y72Fr0ttETciRJ6807KfCLRiTWz_GlodsnYsZ33pW8ZAggYn8hOFooZYHXz_hQedGCZS3YmtNx9p3SecKew7HahSLfDAXPY3g7mguEmQi94-mKT6onVgFePbG7vHohCB4OjTS6qT2-LE2i2JXhK4S_MvopuZuyqIIQdcusB83pPy2MU3KMxDhab3C0j7lTuZcxlF_xewpq07jEv3AAAAAVJP7wkA") 
+SESSION = getenv("SESSION", "AQCvg0rBRe1AcEJTa-Rfcd1Hf3MHsgeiZw0uFK1wwIXcPzLFBxtL9IugHMMMlteA5BBFiagZQiOHIY-3jefE2wBNoirjJE-bM3HCni5LfXl_b6Lng9f_szgcxoqwPvVULspMIQr5f4RGaIlMAZfAqXNnz-yltKkwylYME_JqVJXIvnZCLNZpP3HIWEmVBUFQvv3QXy5C-akrph6R8FSSfJVxhx8wThx1Y6sq8lZp64fqy0087afztnFiGlNukW5ex5z4aw2ii4xvlem4ceOafFfiZSkFOCLQJSODBosdHmsJ1t-FcdcnPfM6P7L69OqENRPJE2G3gvfpSmlrialdU7LXAAAAAVJP7wkA") 
 
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TogaSupport")
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TogaSupport")
@@ -24,5 +24,3 @@ SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
 
 
 FAILED = "https://telegra.ph/file/2fc2b008e321ae4592ee4.jpg"
-
-SESSION = getenv("SESSION", "AQAkGxMR326usVUVHWXl8A_AKlbP0M2Be5gHyTsnjrVVQdqYhIo4cy6vIl7HTNOX4cHFTfglweBoxt93w6W3yRlQjglifZIkwyHJ5gtqMH1gSyi6_SRKCWt9EsqllRB_rcDLlqC7Y72Fr0ttETciRJ6807KfCLRiTWz_GlodsnYsZ33pW8ZAggYn8hOFooZYHXz_hQedGCZS3YmtNx9p3SecKew7HahSLfDAXPY3g7mguEmQi94-mKT6onVgFePbG7vHohCB4OjTS6qT2-LE2i2JXhK4S_MvopuZuyqIIQdcusB83pPy2MU3KMxDhab3C0j7lTuZcxlF_xewpq07jEv3AAAAAVJP7wkA")
