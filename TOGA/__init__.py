@@ -33,7 +33,7 @@ app = Client(
 )
 
 app2 = Client(
-    "TOGAAss",
+    "fallenAss",
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     session_string=str(config.SESSION),
@@ -42,7 +42,7 @@ app2 = Client(
 pytgcalls = PyTgCalls(app2)
 
 
-async def toga_startup():
+async def fallen_startup():
     os.system("clear")
     LOGGER("TOGA").info("\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2523\u2605\x20\x46\x41\x4c\x4c\x45\x4e\x20\x4d\x55\x53\x49\x43\x20\x42\x4f\x54\x20\u2605\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b")
     global BOT_ID, BOT_NAME, BOT_USERNAME, fallendb
